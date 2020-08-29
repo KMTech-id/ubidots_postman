@@ -28,7 +28,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"kelembaban\":82}",
+					"raw": "{\"suhu\":35.8}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -162,7 +162,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"suhu\": {\n        \"value\": 31.0,\n        \"timestamp\": 1598596983000\n    },\n    \"kelembaban\": {\n        \"value\": 75,\n        \"timestamp\": 1598596983000\n    },\n    \"position\":{\n        \"value\":1,\n        \"context\": {\n            \"lat\":-7.800245,\n            \"lng\":110.264890\n        } ,\n        \"timestamp\": 1598596983000\n    }\n}"
+					"raw": "{\n    \"suhu\": {\n        \"value\": 32.1,\n        \"timestamp\": 1598597700000\n    },\n    \"kelembaban\": {\n        \"value\": 75.2,\n        \"timestamp\": 1598597700000\n    },\n    \"position\":{\n        \"value\":1,\n        \"context\": {\n            \"lat\":-7.800245,\n            \"lng\":110.264890\n        } ,\n        \"timestamp\": 1598597700000\n    }\n}"
 				},
 				"url": {
 					"raw": "http://things.ubidots.com/api/v1.6/devices/esp32",
@@ -177,6 +177,170 @@
 						"v1.6",
 						"devices",
 						"esp32"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_data_1_variable",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"type": "text",
+						"value": "things.ubidots.com"
+					},
+					{
+						"key": "X-Auth-Token",
+						"type": "text",
+						"value": "BBFF-uwSPXtKwNwzExj9ewsZfKW0MuAI36X"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://things.ubidots.com/api/v1.6/devices/esp32/suhu/values",
+					"protocol": "http",
+					"host": [
+						"things",
+						"ubidots",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1.6",
+						"devices",
+						"esp32",
+						"suhu",
+						"values"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_lastest_data_1_variable Copy",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"type": "text",
+						"value": "things.ubidots.com"
+					},
+					{
+						"key": "X-Auth-Token",
+						"type": "text",
+						"value": "BBFF-uwSPXtKwNwzExj9ewsZfKW0MuAI36X"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://things.ubidots.com/api/v1.6/devices/esp32/suhu/lv",
+					"protocol": "http",
+					"host": [
+						"things",
+						"ubidots",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1.6",
+						"devices",
+						"esp32",
+						"suhu",
+						"lv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_lastest_data_switch",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"type": "text",
+						"value": "things.ubidots.com"
+					},
+					{
+						"key": "X-Auth-Token",
+						"type": "text",
+						"value": "BBFF-uwSPXtKwNwzExj9ewsZfKW0MuAI36X"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://things.ubidots.com/api/v1.6/devices/esp32/switch/lv",
+					"protocol": "http",
+					"host": [
+						"things",
+						"ubidots",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1.6",
+						"devices",
+						"esp32",
+						"switch",
+						"lv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_lastest_data_volume",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Host",
+						"type": "text",
+						"value": "things.ubidots.com"
+					},
+					{
+						"key": "X-Auth-Token",
+						"type": "text",
+						"value": "BBFF-uwSPXtKwNwzExj9ewsZfKW0MuAI36X"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://things.ubidots.com/api/v1.6/devices/esp32/volume/lv",
+					"protocol": "http",
+					"host": [
+						"things",
+						"ubidots",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1.6",
+						"devices",
+						"esp32",
+						"volume",
+						"lv"
 					]
 				}
 			},
