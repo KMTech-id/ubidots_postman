@@ -164,6 +164,45 @@
 			"response": []
 		},
 		{
+			"name": "send_data_3_variable_timestamps _gps_coordinate_using_runner",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-Auth-Token",
+						"type": "text",
+						"value": "{{token}}"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"suhu\": {\n        \"value\": {{suhu}},\n        \"timestamp\": {{timestamp}}000\n    },\n    \"kelembaban\": {\n        \"value\": {{kelembaban}},\n        \"timestamp\": {{timestamp}}000\n    },\n    \"tekanan\": {\n        \"value\": {{tekanan}},\n        \"timestamp\": {{timestamp}}000\n    },\n    \"position\":{\n        \"value\":1,\n        \"context\": {\n            \"lat\":-7.800245,\n            \"lng\":110.264890\n        } ,\n        \"timestamp\": {{timestamp}}000\n    }\n}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "http://{{baseUrl}}/api/v1.6/devices/{{device}}",
+					"protocol": "http",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"api",
+						"v1.6",
+						"devices",
+						"{{device}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "get_data_1_variable",
 			"request": {
 				"method": "GET",
