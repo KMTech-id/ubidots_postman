@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "910b1625-be6c-46b7-a46a-02b90a4f4877",
-		"name": "Ubidots",
+		"name": "ubidots",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -76,7 +76,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"suhu\":41,\"kelembaban\":75}"
+					"raw": "{\"suhu\":41,\"kelembaban\":9}",
+					"options": {
+						"raw": {}
+					}
 				},
 				"url": {
 					"raw": "http://things.ubidots.com/api/v1.6/devices/esp32",
@@ -119,7 +122,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\"suhu\":{\"value\": 33.1,\"timestamp\": 1598596200000},\"kelembaban\": {\"value\": 78.9,\"timestamp\": 1598596200000}}"
+					"raw": "{\"suhu\":{\"value\": 33.1,\"timestamp\": 1598596200000},\"kelembaban\": {\"value\": 78.9,\"timestamp\": 1598596200000}}",
+					"options": {
+						"raw": {}
+					}
 				},
 				"url": {
 					"raw": "http://things.ubidots.com/api/v1.6/devices/esp32",
@@ -162,7 +168,10 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"suhu\": {\n        \"value\": 32.1,\n        \"timestamp\": 1598597700000\n    },\n    \"kelembaban\": {\n        \"value\": 75.2,\n        \"timestamp\": 1598597700000\n    },\n    \"position\":{\n        \"value\":1,\n        \"context\": {\n            \"lat\":-7.800245,\n            \"lng\":110.264890\n        } ,\n        \"timestamp\": 1598597700000\n    }\n}"
+					"raw": "{\n    \"suhu\": {\n        \"value\": 32.1,\n        \"timestamp\": 1599377788000\n    },\n    \"kelembaban\": {\n        \"value\": 75.2,\n        \"timestamp\": 1599377788000\n    },\n    \"position\":{\n        \"value\":1,\n        \"context\": {\n            \"lat\":-7.800245,\n            \"lng\":110.264890\n        } ,\n        \"timestamp\": 1599377788000\n    }\n}",
+					"options": {
+						"raw": {}
+					}
 				},
 				"url": {
 					"raw": "http://things.ubidots.com/api/v1.6/devices/esp32",
@@ -224,7 +233,7 @@
 			"response": []
 		},
 		{
-			"name": "get_lastest_data_1_variable Copy",
+			"name": "get_lastest_data_1_variable",
 			"request": {
 				"method": "GET",
 				"header": [
